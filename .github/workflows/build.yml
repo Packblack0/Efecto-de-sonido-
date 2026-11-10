@@ -20,12 +20,12 @@ jobs:
         run: unzip -o PackSound.zip
 
       - name: Grant execute permission for gradlew
-        run: chmod +x PackSound/gradlew
+        run: chmod +x gradlew
 
       - name: Build APK with Gradle
-        run: cd PackSound && ./gradlew assembleDebug --no-daemon
+        run: ./gradlew assembleDebug --no-daemon
 
       - uses: actions/upload-artifact@v4
         with:
           name: PackSound-apk
-          path: PackSound/app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/apk/debug/app-debug.apk
