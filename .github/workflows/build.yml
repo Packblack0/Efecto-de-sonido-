@@ -12,11 +12,7 @@ jobs:
 
       - name: Unzip project source
         run: |
-          mkdir -p temp_unzip
-          unzip -o PackSound2.zip -d temp_unzip
-          # Mueve todo el contenido interno a la raíz del repositorio
-          find temp_unzip -mindepth 2 -type f -exec mv {} ./ \; 2>/dev/null || true
-          find temp_unzip -mindepth 2 -type d -exec mv {} ./ \; 2>/dev/null || true
+          unzip -o PackSound.zip
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
