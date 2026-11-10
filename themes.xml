@@ -1,7 +1,0 @@
-<resources>
-    <style name="Theme.PackSound" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">#6C4DFF</item>
-        <item name="colorOnPrimary">#FFFFFF</item>
-        <item name="colorSecondary">#00BFA5</item>
-    </style>
-</resources>
